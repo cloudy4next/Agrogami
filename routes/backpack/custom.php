@@ -21,4 +21,5 @@ Route::group([
 
     Route::get('/admission', ['as' => 'admin.admission.from', 'uses' => 'StudentController@admissionFrom']);
     Route::post('/admission-info-save', ['as' => 'admin.admission.info.save', 'uses' => 'StudentController@admissionFromSave']);
+    Route::crud('subject', 'SubjectCrudController');
 }); // this should be the absolute last line of this file
